@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: diaa
-          image: diaaqassem1/chatapp:v0.3
+          image: diaaqassem1/me:v2
           ports:
-            - containerPort: 3000
+            - containerPort: 80
