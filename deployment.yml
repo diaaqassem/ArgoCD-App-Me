@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diaa-deployment
+  labels:
+    app: diaa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: diaa
+  template:
+    metadata:
+      labels:
+        app: diaa
+    spec:
+      containers:
+        - name: diaa
+          image: docker pull diaaqassem1/me:v2
+          ports:
+            - containerPort: 80
