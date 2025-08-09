@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: diaa
-          image: docker pull diaaqassem1/me:v2
+          image: diaaqassem1/me:v2
           ports:
             - containerPort: 80
